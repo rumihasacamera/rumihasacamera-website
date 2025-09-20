@@ -37,7 +37,7 @@ const Header = () => {
             <span className="uppercase">EMOTIVE WEDDING PHOTOGRAPHY</span>
             <span className="hidden sm:inline"> • </span>
             <br className="sm:hidden" />
-            <span className="uppercase">BY <span className="text-ink">NADISH SOOD</span></span>
+            <span className="uppercase">BY <span className="text-clay">NADISH SOOD</span></span>
           </div>
         </NavLink>
 
