@@ -31,7 +31,7 @@ const PortfolioWeddings = () => {
           {/* Simple CTA */}
           <div className="text-center mt-16">
             <Link
-              to="/portfolio/weddings/albums"
+              to="/portfolio/weddings/blogs"
               className="inline-block text-xs sm:text-sm tracking-wide uppercase text-ink border-b border-gray-300 hover:text-clay hover:border-clay transition-colors"
             >
               View Wedding Albums
