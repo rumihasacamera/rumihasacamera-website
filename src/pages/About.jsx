@@ -57,18 +57,20 @@ const About = () => {
 
           {/* CTA */}
           <div className="text-center">
-            <a
-              href="/contact"
-              className="inline-block px-6 py-3 text-sm tracking-wide uppercase text-white bg-clay hover:bg-clay/90 transition-colors"
-            >
-              Request a Commission
-            </a>
-            <a
-              href="/portfolio/weddings/blogs"
-              className="inline-block ml-4 px-6 py-3 text-sm tracking-wide uppercase text-clay border border-clay hover:bg-clay/10 transition-colors"
-            >
-              See Full Wedding Galleries
-            </a>
+            <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center sm:gap-4">
+              <a
+                href="/contact"
+                className="px-6 py-3 text-sm tracking-wide uppercase text-white bg-clay hover:bg-clay/90 transition-colors"
+              >
+                Book Me
+              </a>
+              <a
+                href="/portfolio/weddings/blogs"
+                className="px-6 py-3 text-sm tracking-wide uppercase text-clay border border-clay hover:bg-clay/10 transition-colors"
+              >
+                See Full Wedding Galleries
+              </a>
+            </div>
           </div>
         </div>
       </div>
