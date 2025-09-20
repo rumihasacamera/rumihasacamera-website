@@ -38,15 +38,12 @@ const Home = () => {
               Candid, editorial wedding photography that feels like you.
             </p>
             <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-4">
-              I photograph what’s real and what lasts, the moments most people miss. Unobtrusive when it matters, a steady guide when it helps.
-            </p>
-            <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-4">
-              Images designed to live on your walls, not just your phone.
+              Unobtrusive when it matters, a steady guide when it helps.
             </p>
             <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-4">
               My promise is presence, patience, and photographs built to be lived with.
             </p>
-            <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-8">
+            <p className="text-base sm:text-lg text-clay leading-relaxed mb-8">
               Photographs that tell your story through eternity.
             </p>
             {/* CTA moved below the highlights strip */}
