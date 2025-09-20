@@ -11,7 +11,7 @@ const About = () => {
             <div className="h-px w-12 bg-gold/60 mx-auto mb-6" />
             <div className="max-w-2xl mx-auto text-ink/80 space-y-4">
               <p>
-                I picked up my first camera when I was ten. The promise of a camera as the closest thing to a time machine was obvious to me — I fell in love. At Ishq Means Love, I make photographs that are honest, enduring, and a class apart in style.
+                I picked up my first camera when I was ten. The promise of a camera as the closest thing to a time machine was obvious to me — I fell in love. At Rumi Has a Camera, I make photographs that are honest, enduring, and a class apart in style.
               </p>
               <p>
                 I’m big on storytelling. Your album should let you see how the day unfolded — and feel it again.

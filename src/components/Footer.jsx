@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="space-y-3">
           {/* Business Name */}
           <h3 className="text-xl md:text-2xl font-heading font-semibold tracking-wide">
-            ISHQ MEANS LOVE
+            RUMI HAS A CAMERA
           </h3>
           
           {/* Subtext Lines (compact) */}
@@ -27,7 +27,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-3 pt-3 border-t border-[#E7E0D6]">
           <p className="text-[10px] sm:text-xs text-ink/60">
-            © 2024 ISHQ MEANS LOVE. All rights reserved.
+            © 2024 Rumi Has a Camera. All rights reserved.
           </p>
         </div>
       </div>

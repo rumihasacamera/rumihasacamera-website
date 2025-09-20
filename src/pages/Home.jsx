@@ -20,7 +20,7 @@ const Home = () => {
         <div>
           <HeroImage
             images={heroImages}
-            alt="ishqmeanslove Hero"
+            alt="Rumi Has a Camera Hero"
             interval={3000}
           />
         </div>

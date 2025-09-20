@@ -31,7 +31,7 @@ const Header = () => {
           className="block hover:opacity-80 transition-opacity"
         >
           <div className="text-2xl font-heading text-ink tracking-[0.08em] font-semibold">
-            ISHQ MEANS LOVE
+            RUMI HAS A CAMERA
           </div>
           <div className="text-xs text-ink/60 mt-1 tracking-wide">
             <span className="uppercase">EMOTIVE WEDDING PHOTOGRAPHY</span>
