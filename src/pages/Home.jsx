@@ -35,14 +35,16 @@ const Home = () => {
             </h2>
             <div className="h-px w-12 bg-gold/60 mx-auto mb-6" />
             <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-4">
-              I photograph the unrepeatable, the moments you’ll want to hold
-              onto when the noise fades. I’ll be there before the room fills,
-              I’ll stay when the last song plays, and I’ll notice the quiet
-              gestures most people miss.
+              Candid, editorial wedding photography that feels like you.
             </p>
-            <p className="text-base sm:text-lg text-ink/80 leading-relaxed">
-              My promise is presence, patience, and photographs built to be
-              lived with.
+            <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-4">
+              I photograph what’s real and what lasts, the moments most people miss. Unobtrusive when it matters, a steady guide when it helps.
+            </p>
+            <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-4">
+              Images designed to live on your walls, not just your phone.
+            </p>
+            <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-4">
+              My promise is presence, patience, and photographs built to be lived with.
             </p>
             <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-8">
               Photographs that tell your story through eternity.
