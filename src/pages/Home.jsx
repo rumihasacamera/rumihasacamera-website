@@ -21,7 +21,9 @@ const Home = () => {
           <HeroImage
             images={heroImages}
             alt="Rumi Has a Camera Hero"
-            interval={3000}
+            interval={3500}
+            fadeDuration={900}
+            stagger={120}
           />
         </div>
 
