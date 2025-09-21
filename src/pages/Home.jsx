@@ -41,7 +41,8 @@ const Home = () => {
               Unobtrusive when it matters, a steady guide when it helps.
             </p>
             <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-4">
-              My promise is presence, patience, and photographs built to be lived with.
+              My promise is presence11, patience, and photographs built to be
+              lived with.
             </p>
             <p className="text-base sm:text-lg text-clay leading-relaxed mb-8">
               Photographs that tell your story through eternity.
@@ -115,9 +116,9 @@ const Home = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="text-center">
                 <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-4 italic">
-                  "Nadish captured our day exactly as it happened—no forced poses,
-                  just pure emotion. Looking at our photos feels like reliving
-                  every perfect moment."
+                  "Nadish captured our day exactly as it happened—no forced
+                  poses, just pure emotion. Looking at our photos feels like
+                  reliving every perfect moment."
                 </p>
                 <p className="text-xs sm:text-sm text-ink/60 uppercase tracking-wide">
                   — Sarah & Mike
@@ -125,9 +126,9 @@ const Home = () => {
               </div>
               <div className="text-center">
                 <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-4 italic">
-                  "We barely noticed Nadish was there, but somehow he caught every
-                  meaningful glance and genuine smile. These photos tell our story
-                  better than we ever could."
+                  "We barely noticed Nadish was there, but somehow he caught
+                  every meaningful glance and genuine smile. These photos tell
+                  our story better than we ever could."
                 </p>
                 <p className="text-xs sm:text-sm text-ink/60 uppercase tracking-wide">
                   — Priya & James
