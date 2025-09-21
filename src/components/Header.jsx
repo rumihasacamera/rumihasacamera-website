@@ -30,7 +30,7 @@ const Header = () => {
           to="/"
           className="block hover:opacity-80 transition-opacity"
         >
-          <div className="text-2xl font-heading text-ink tracking-[0.08em] font-semibold">
+          <div className="text-xl sm:text-2xl font-heading text-ink tracking-[0.08em] font-semibold">
             RUMI HAS A CAMERA
           </div>
           <div className="text-xs text-ink/60 mt-1 tracking-wide">
