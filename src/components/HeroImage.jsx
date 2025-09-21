@@ -45,7 +45,7 @@ export default function HeroImage({ images = [], alt = "Hero Image", interval = 
     };
   }, []);
 
-  // Loop: wait -> decode next -> fade in overlay -> commit
+  // Loop: wait -> decode next -> fade in overlay -> switch base -> fade out overlay -> clear
   useEffect(() => {
     if (slides.length <= 1) return;
     let cancelled = false;
@@ -56,17 +56,35 @@ export default function HeroImage({ images = [], alt = "Hero Image", interval = 
 
         const nextIdx = (indexRef.current + 1) % slides.length;
         const nextSrc = slides[nextIdx]?.src;
+        if (!nextSrc) continue;
+
+        // Pre-decode next image to reduce chances of a blank paint
         await decodeImage(nextSrc);
         if (cancelled || !mountedRef.current) break;
 
+        // Put next image on overlay, then let it fade in
         setOverlaySrc(nextSrc);
-        await new Promise((r) => requestAnimationFrame(r));
+        await new Promise((r) => requestAnimationFrame(r)); // ensure element exists before toggling opacity
         setOverlayVisible(true);
+
+        // Fade-in time
         await sleep(fadeDuration);
         if (cancelled || !mountedRef.current) break;
 
+        // Switch base to next after overlay is fully visible
         setBaseSrc(nextSrc);
+
+        // Keep overlay up for at least one paint to avoid a frame where neither is ready
+        await new Promise((r) => requestAnimationFrame(r));
+        if (cancelled || !mountedRef.current) break;
+
+        // Fade overlay out gently instead of yanking it
         setOverlayVisible(false);
+
+        // Let fade-out complete, then clear overlay
+        await sleep(fadeDuration);
+        if (cancelled || !mountedRef.current) break;
+
         setOverlaySrc("");
         indexRef.current = nextIdx;
       }
@@ -82,34 +100,29 @@ export default function HeroImage({ images = [], alt = "Hero Image", interval = 
     <div className="relative w-full h-screen overflow-hidden bg-black isolate">
       {baseSrc && (
         <img
-          key={`base-${baseSrc}`}
           src={baseSrc}
           alt={alt}
-          className="absolute inset-0 w-full h-full object-cover"
-          loading={isFirst ? "eager" : "lazy"}
+          className="absolute inset-0 w-full h-full object-cover block"
+          loading={isFirst ? "eager" : "eager"}
           decoding="async"
           fetchPriority={isFirst ? "high" : "auto"}
-          style={{ WebkitBackfaceVisibility: "hidden", transform: "translateZ(0)" }}
         />
       )}
 
       {overlaySrc && (
         <img
-          key={`overlay-${overlaySrc}`}
           src={overlaySrc}
           alt={`${alt} next`}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity ${
+          className={`absolute inset-0 w-full h-full object-cover block transition-opacity ${
             overlayVisible ? "opacity-100" : "opacity-0"
           }`}
           style={{
             transitionDuration: `${fadeDuration}ms`,
             willChange: "opacity",
-            WebkitBackfaceVisibility: "hidden",
-            transform: "translateZ(0)",
           }}
-          loading="lazy"
+          loading="eager"
           decoding="async"
-          fetchPriority="low"
+          fetchPriority="high"
         />
       )}
 
