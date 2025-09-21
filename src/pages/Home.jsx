@@ -41,7 +41,7 @@ const Home = () => {
               Unobtrusive when it matters, a steady guide when it helps.
             </p>
             <p className="text-base sm:text-lg text-ink/80 leading-relaxed mb-4">
-              My promiseee is presence, patience, and photographs built to be
+              My promise is presence, patience, and photographs built to be
               lived with.
             </p>
             <p className="text-base sm:text-lg text-clay leading-relaxed mb-8">
