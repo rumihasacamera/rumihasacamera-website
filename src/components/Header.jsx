@@ -4,15 +4,7 @@ import { useState, useEffect } from "react";
 const navLinks = [
   { label: "Portfolio", path: "/portfolio/weddings" },
   { label: "Blog", path: "/portfolio/weddings/blogs" },
-  {
-    label: "Others",
-    path: "#",
-    subLinks: [
-      { label: "Artists", path: "/portfolio/artists" },
-      { label: "Family", path: "/portfolio/family" },
-      { label: "Birthdays", path: "/portfolio/birthdays" },
-    ],
-  },
+  // Others hidden for now
   { label: "About", path: "/about" },
   { label: "Contact", path: "/contact" },
 ];
